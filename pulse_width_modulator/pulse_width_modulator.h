@@ -1,6 +1,5 @@
 #include <cstdint>
 #include <stdio.h>
-#include <optional>
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "hardware/clocks.h"
