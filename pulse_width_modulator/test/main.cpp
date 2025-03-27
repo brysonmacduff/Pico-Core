@@ -29,13 +29,13 @@ int main()
     while(true)
     { 
         sleep_ms(DELAY.count());
-        pwm.SetPwmDutyCycle(LOWER_BOUND_DUTY_CYCLE);
+        pwm.SetDutyCycle(LOWER_BOUND_DUTY_CYCLE);
         sleep_ms(DELAY.count());
-        pwm.SetPwmDutyCycle(MIDPOINT_DUTY_CYCLE);
+        pwm.SetDutyCycle(MIDPOINT_DUTY_CYCLE);
         sleep_ms(DELAY.count());
-        pwm.SetPwmDutyCycle(UPPER_BOUND_DUTY_CYCLE);
+        pwm.SetDutyCycle(UPPER_BOUND_DUTY_CYCLE);
         sleep_ms(DELAY.count());
-        pwm.SetPwmDutyCycle(MIDPOINT_DUTY_CYCLE);
+        pwm.SetDutyCycle(MIDPOINT_DUTY_CYCLE);
     }
 
     return 0;
