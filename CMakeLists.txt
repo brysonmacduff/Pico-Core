@@ -14,3 +14,4 @@ project(pico_core C CXX ASM)
 pico_sdk_init()
 
 add_subdirectory(pulse_width_modulator)
+add_subdirectory(uart)
