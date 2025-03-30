@@ -6,4 +6,7 @@ add_library(${COMPONENT} STATIC ${SRCS})
 target_link_libraries(${COMPONENT} pico_stdlib hardware_pwm)
 target_include_directories(${COMPONENT} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
+# Install to file system
+install(TARGETS ${COMPONENT} ARCHIVE DESTINATION ${INSTALL_DIR})
+
 add_subdirectory(test)

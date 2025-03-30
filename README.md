@@ -4,6 +4,8 @@
     - cmake -S . -B build
     - cd build
     - make
+* Install Instructions
+    - cmake --install build
 * Runing Test Firmware
     - This project builds test firmware that runs on the Pico for testing libraries in this project.
     - Transfer uf2 file from build directory to Raspberry Pi Pico W drive.

@@ -13,9 +13,6 @@ PulseWidthModulator::PulseWidthModulator(uint8_t gpio,
 
     // Get the PWM slice for the specified gpio
     const uint pwm_slice = pwm_gpio_to_slice_num(m_gpio);
-
-    // Get the PWM channel for the specified gpio
-    const uint pwm_channel = pwm_gpio_to_channel(m_gpio);
     
     // Compute the clock divider value for the given pwm frequency and Pico clock frequency
     const float clock_divider = ComputeClockDivider(pwm_frequency_hz);
