@@ -13,5 +13,6 @@ project(pico_core C CXX ASM)
 # initialize the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-set(INSTALL_DIR "/usr/lib/pico-core")
+set(LIB_INSTALL_DIR "/usr/lib/pico-core")
+set(INC_INSTALL_DIR "/usr/include/pico-core")
 add_subdirectory(pulse_width_modulator)
