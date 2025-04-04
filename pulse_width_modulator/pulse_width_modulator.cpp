@@ -18,7 +18,7 @@ PulseWidthModulator::PulseWidthModulator(uint8_t gpio,
     const float clock_divider = ComputeClockDivider(pwm_frequency_hz);
 
     pwm_set_clkdiv(pwm_slice, clock_divider);
-    printf("PulseWidthModulator::PulseWidthModulator() -> gpio: {%u}, wrap: {%u}, clock_divider: {%f}\n", m_gpio, m_wrap, clock_divider); 
+    //printf("PulseWidthModulator::PulseWidthModulator() -> gpio: {%u}, wrap: {%u}, clock_divider: {%f}\n", m_gpio, m_wrap, clock_divider); 
 
     // Set the wrap value for the given pwm slice
     pwm_set_wrap(pwm_slice, m_wrap);
@@ -40,7 +40,7 @@ bool PulseWidthModulator::SetDutyCycle(float duty_cycle)
     const uint pwm_channel = pwm_gpio_to_channel(m_gpio);
     const uint16_t level = m_wrap * duty_cycle;
 
-    printf("PulseWidthModulator::SetChannelLevel() -> Setting level to: {%u}, for duty_cycle: {%f}\n",level, duty_cycle);
+    //printf("PulseWidthModulator::SetChannelLevel() -> Setting level to: {%u}, for duty_cycle: {%f}\n",level, duty_cycle);
 
     pwm_set_chan_level(pwm_slice, pwm_channel, level);
 
